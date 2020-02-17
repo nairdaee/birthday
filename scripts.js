@@ -1,6 +1,8 @@
-var Century, Year, Month, Day, error_message, weekDay
+var Century, Year, Month, Day, error_message, weekDay, male, female
 //inputData
 function inputData(){
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
     var Century = document.getElementById("century"). value;
     var Year = document.getElementById("year"). value;
     var Month = document.getElementById("month"). value;
