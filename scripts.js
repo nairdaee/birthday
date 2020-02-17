@@ -1,12 +1,11 @@
 var Century, Year, Month, Day, error_message, weekDay, male, female
 //inputData
 function inputData(){
-    var male = document.getElementById("male");
-    var female = document.getElementById("female");
     var Century = document.getElementById("century"). value;
     var Year = document.getElementById("year"). value;
     var Month = document.getElementById("month"). value;
     var Day = document.getElementById("day"). value;
+    var Buttons = document.getElementsByClassName("button");
     var error_message = document.getElementById("error_message");
     var text;
 
