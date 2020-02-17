@@ -8,7 +8,8 @@
 }
 
 body{
-      background:rgb(125, 153, 170)
+      background-image:url(https://www.worldatlas.com/r/w728-h425-c728x425/upload/e1/19/b8/shutterstock-563866105.jpg);
+      background-size: 100%;
 }
 .container{
     position: absolute;
