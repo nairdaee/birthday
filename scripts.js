@@ -12,7 +12,7 @@ function inputData(){
 
     error_message.style.padding = "10px";
 
-    if(Century.length != 2){
+    if(Century <==0 || Century>20){
         text = "Please Enter Valid Century i.e 18,19 or 20";
         error_message.innerHTML = text;
         return false;
