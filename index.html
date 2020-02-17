@@ -10,12 +10,10 @@
         <div class="container">
         <div id= "error_message"></div>
          <h1><u>KNOW YOUR AKAN NAME</u></h1>
-        <form>
-        <input id="male" name="gender" type="radio">
-        <label for="male">MALE</label><br>
-        <input id="female" name="gender" type="radio">
-        <label for="female">FEMALE</label><br>
-        
+        <form id="my form" class="form">
+        <div class="radio-buttons" >
+            <input type="radio" class="input" value= "male" id="gend" required>MALE
+            <input type="radio" class="input" value= "female" id="gend" required>FEMALE
         <div class="input_field">
            <input type="number" placeholder="Century" id="century">
         </div>
@@ -29,9 +27,7 @@
            <input type="number" placeholder="Day" id="day">
         </div>
         <div class="button">
-           <input type="submit">
-        </div>
-        </div>
+           <button type= "button">submit</button>
         </div>
       </form>
      </div>
