@@ -1,4 +1,4 @@
-c# BIRTHDAY APPLICATION
+#### BIRTHDAY APPLICATION
 #### Tells user about their Akan birthday name,2020
 #### By Adrian Etenyi
 ## Description
