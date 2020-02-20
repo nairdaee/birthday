@@ -3,33 +3,30 @@
     <head>
         <title>Akan birthday name</title>
         <link href="ghana.css" rel= "stylesheet" type="text/css">
-        <script src="scripts.js"></script>
+        <script src="scripts1.js"></script>
     </head>
     <body>
          <p>Akan names are derived from <strong>Ghanian culture</strong>. Frequently in Ghana,children are given their first name as a "day name" which corresponds to the day in the week they were born.<strong>Fill in the form</strong> and instantly get to know yours with the click of a button.</p>
         <div class="container">
-        <div id= "error_message"></div>
          <h1><u>KNOW YOUR AKAN NAME</u></h1>
-        <form id="my form" class="form">
-        <div class="radio-buttons" >
-            <input type="radio" class="input" value= "male" id="gend" required>MALE
-            <input type="radio" class="input" value= "female" id="gend" required>FEMALE
-        <div class="input_field">
-           <input type="number" placeholder="Century" id="century">
-        </div>
-        <div class="input_field">
-           <input type="number" placeholder="Year" id=year>
-        </div>
-        <div class="input_field">
-           <input type="number" placeholder="Month" id="month">
-        </div>
-        <div class="input_field">
-           <input type="number" placeholder="Day" id="day">
-        </div>
-        <div class="button">
-           <input type= "submit" onsubmit="">
-        </div>
-      </form>
+        <form method="post" action="#" onsubmit="return checkForBlank()">
+         <fieldset>
+            <input id="male" name="gender" type="radio" value="male">Male</input>
+          <br>
+          <input id="female" name="gender" type="radio" value="female">Female</input>
+          <br>
+            <label>Year born:
+            <input type="number" id="hname" name="hname" value="dob"></label>
+          <br>
+            <label>Month born:
+            <input type="number" id="iname" name="iname" value="dob"></label>
+            <br>
+            <label>Day born:
+            <input type="number" id="jname" name="jname" value="dob"></label>
+            <br>
+            <input type="submit" value="click me">
+         </fieldset>
+        </form>
      </div>
     </body>
 </html>
