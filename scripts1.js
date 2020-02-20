@@ -4,29 +4,39 @@ function execute() {
  //these are the control flows of that determine when an error message is to pop up   
       if(document.getElementById("birthyear").value == "") {
         errormessage += "Please enter your year of birth \n";
-        document.getElementById("hname").style.borderColor = "red";
+        document.getElementById("birthyear").style.borderColor = "red";
        }
       if(document.getElementById("birthmonth").value == "") {
         errormessage += "Please enter your month of birth \n";
-        document.getElementById("iname").style.borderColor = "red";
+        document.getElementById("birthmonth").style.borderColor = "red";
        }
       if(document.getElementById("birthday").value == "") {
         errormessage += "Please enter your day of birth \n";
-        document.getElementById("jname").style.borderColor = "red";
+        document.getElementById("birthday").style.borderColor = "red";
        }
       if (errormessage != "") {
         alert(errormessage)
         return false;
        }
   //These are defined variables for the input data which will actually determine the day  
-    var year = document.getElementById("hname").value;
-    var month = document.getElementById("iname").value;
-    var day = document.getElementById("jname").value;
+    var year = document.getElementById("birthyear").value;
+    var month = document.getElementById("birthmonth").value;
+    var day = document.getElementById("birthday").value;
     var d = new Date()
       d .setDate(parseInt(day)) //this object allows us to set the day of the month and so on
       d .setMonth(parseInt(month)) 
       d .setFullYear(parseInt(year))
-    
+  //if else for the variables above
+    if(year <=0){
+        alert("Enter valid year i.e 2001,1998....");
+    }
+    if(month >12){
+        alert("Enter valid month i.e 1 to 12");
+    }
+    if(day >31){
+        alert("Enter valid birth day i.e 1 to 31");
+    }
+
     var birthday = d .getDay(0)
     //these are the arrays for the actual Akan names
     var maleOnes = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
@@ -41,7 +51,5 @@ function execute() {
       } else {
         alert("Please input valid information")
       }
-    document.getElementsByType("submit").addEventListener("click",function(event){event.preventDefault()
-    })
  
-    }
+}
