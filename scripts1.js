@@ -1,6 +1,7 @@
+//this is the main function
 function execute() {
     var errormessage = "";
-    
+ //these are the control flows of that determine when an error message is to pop up   
       if(document.getElementById("hname").value == "") {
         errormessage += "Please enter your year of birth \n";
         document.getElementById("hname").style.borderColor = "red";
@@ -17,25 +18,25 @@ function execute() {
         alert(errormessage)
         return false;
        }
-      
+  //These are defined variables for the input data which will actually determine the day  
     var year = document.getElementById("hname").value;
     var month = document.getElementById("iname").value;
     var day = document.getElementById("jname").value;
     var d = new Date()
-      d .setDate(parseInt(day))
+      d .setDate(parseInt(day)) //this object allows us to set the day of the month and so on
       d .setMonth(parseInt(month)) 
       d .setFullYear(parseInt(year))
     
-    var akan = d .getDay(0)
-    
-    var akan1 = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
-    var akan2 = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
-    
+    var birthday = d .getDay(0)
+    //these are the arrays for the actual Akan names
+    var maleOnes = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
+    var femaleOnes = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
+    //these are the conditions for the male and female radio buttons
       if (male. checked ==true){
-        var name = ((akan1[akan]) .toString())
+        var name = ((maleOnes[birthday]) .toString())
         alert(name)
       } else if (female. checked ==true) {
-        var name = ((akan2[akan]) .toString())
+        var name = ((femaleOnes[akan]) .toString())
         alert(name)
       } else {
         alert("Please input valid information")
