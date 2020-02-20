@@ -2,15 +2,15 @@
 function execute() {
     var errormessage = "";
  //these are the control flows of that determine when an error message is to pop up   
-      if(document.getElementById("hname").value == "") {
+      if(document.getElementById("birthyear").value == "") {
         errormessage += "Please enter your year of birth \n";
         document.getElementById("hname").style.borderColor = "red";
        }
-      if(document.getElementById("iname").value == "") {
+      if(document.getElementById("birthmonth").value == "") {
         errormessage += "Please enter your month of birth \n";
         document.getElementById("iname").style.borderColor = "red";
        }
-      if(document.getElementById("jname").value == "") {
+      if(document.getElementById("birthday").value == "") {
         errormessage += "Please enter your day of birth \n";
         document.getElementById("jname").style.borderColor = "red";
        }
@@ -41,4 +41,7 @@ function execute() {
       } else {
         alert("Please input valid information")
       }
- }
+    document.getElementsByType("submit").addEventListener("click",function(event){event.preventDefault()
+    })
+ 
+    }
