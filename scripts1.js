@@ -1,4 +1,4 @@
-function checkForBlank() {
+function execute() {
     var errormessage = "";
     
     if(document.getElementById("hname").value == "") {
