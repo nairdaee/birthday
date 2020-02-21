@@ -26,7 +26,7 @@ function execute() {
     var day = document.getElementById("birthday").value;
     var d = new Date()
       d .setDate(parseInt(day)) //this object allows us to set the day of the month and so on
-      d .setMonth(parseInt(month)) 
+      d .setMonth(parseInt(month -1)) 
       d .setFullYear(parseInt(year))
  
  
@@ -62,8 +62,7 @@ function execute() {
         alert("Please input valid information")
       }
  
-//attempt to remove 405 error
-     document.getElementById("burron").addEventListener("click" ,function(event){
-     event.preventDefault()
-     })
+//a method that will reset values of all elements in a form
+     document.getElementById("akanForm")
+     .reset();
 }
