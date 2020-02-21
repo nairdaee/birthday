@@ -33,13 +33,16 @@ function execute() {
 //if else for the variables above
     if(year <=0){
         alert("Enter valid year i.e 2001,1998....");
-    }
+        return false;
+      }
     if(month >12){
         alert("Enter valid month i.e 1 to 12");
-    }
+        return false;
+      }
     if(day >31){
         alert("Enter valid birth day i.e 1 to 31");
-    }
+        return false;
+      }
 
     var birthday = d .getDay(0)
    
