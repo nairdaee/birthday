@@ -56,7 +56,7 @@ function execute() {
         var name = ((maleOnes[birthday]) .toString())
         alert(name)
       } else if (female. checked ==true) {
-        var name = ((femaleOnes[akan]) .toString())
+        var name = ((femaleOnes[birthday]) .toString())
         alert(name)
       } else {
         alert("Please input valid information")
